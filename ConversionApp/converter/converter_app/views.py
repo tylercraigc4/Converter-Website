@@ -78,7 +78,7 @@ def testAnswer(userAnswer, type1, type2, val):
 
 # Create your views here.
 def converter(request):
-    print("Hi Poya!")
+    print("Hi Tyler!")
     return render(request, 'home.html',{'name': 'Olivia'})
     
 def base(request):
