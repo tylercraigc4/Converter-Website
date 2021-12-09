@@ -1,0 +1,120 @@
+.base_body {
+    /* background-color:rgb(234, 248, 236); */
+    background-color:#E4E3F2;
+}
+
+.topnav {
+  background-color: rgb(65, 18, 18);
+  overflow: hidden;
+  padding: 10px;
+  text-align: left;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color:#E4E3F2;
+  color: rgb(37, 15, 15);
+}
+
+/*.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}*/
+
+.topnav-links {
+  text-align: left;
+  margin-right: 10px;
+}
+
+
+
+.title {
+    /*color:#2e3138;*/
+    color:#E4E3F2;
+    text-align:left;
+    margin-left: 10%;
+}
+
+select {
+    width:300px;
+    height:50px;
+}
+.testAnsBtn {
+    width:100px;
+    height:30px;
+    margin:0 auto;
+    background-color:#dad0cd;
+    color:#311002;
+    border: 1px solid gray;
+    border-radius: 5em;
+}
+.testAnswer div {
+    margin-bottom:1rem;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    margin:0 auto;
+    margin-top:10rem;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: #2e3138;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .input-form {
+    text-align: center;
+  }
+
+  #welcome {
+    text-align: center;
+  }
+
+  .home-body {
+    margin:10px 
+  }

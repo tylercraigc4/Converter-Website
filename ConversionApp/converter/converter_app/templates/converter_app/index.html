@@ -1,0 +1,60 @@
+<html>
+<body>
+<h1>This is a Length Converter!</h1>
+<div class="panel2" style="padding:12px;">
+    <table width="600" border="0" cellspacing="0" cellpadding="0">
+    <form name="calForm" _lpchecked="1"></form>
+        <tbody>
+            <tr>
+                <td width="300">
+                    <b>From:</b>
+                </td>
+                <td width="300">
+                    <b>To:</b>
+                </td>
+            </tr>
+        <tr>
+            <td>
+                <input type="text" name="fromVal" onkeyup="calcul();" style="width:275px;">
+            </td>
+            <td>
+                <input type="text" name="toVal" style="width:275px;background-color:rgb(238, 238, 238);" readonly="">
+            </td>
+        </tr>
+        <tr>
+            <td style="padding-top:5px;">
+                <select name="calFrom" id="calFrom" onchange="calcul();" size="11" style="width:280px;">
+                    <option value="1">Meter</option>
+            <option value="2">Kilometer</option>
+            <option value="3">Centimeter</option>
+            <option value="4">Millimeter</option>
+            <option value="5">Micrometer</option>
+            <option value="6">Nanometer</option>
+            <option value="7">Mile</option>
+            <option value="8">Yard</option>
+            <option value="9">Foot</option>
+            <option value="10">Inch</option>
+            <option value="11">Light Year</option>
+        </select></td>
+        <td style="padding-top:5px;">
+            <select name="calTo" id="calTo" size="11" onchange="calcul();" style="width:280px;">
+                <option value="1">Meter</option>
+                <option value="2">Kilometer</option>
+                <option value="3">Centimeter</option>
+                <option value="4">Millimeter</option>
+                <option value="5">Micrometer</option>
+                <option value="6">Nanometer</option>
+                <option value="7">Mile</option>
+                <option value="8">Yard</option>
+                <option value="9">Foot</option>
+                <option value="10">Inch</option>
+                <option value="11">Light Year</option>
+            </select>
+        </td>
+    </tr>
+    
+    </tbody></table>
+    <div id="fcresult" style="text-align:center;padding-top:10px;"></div>
+    </div>
+</body>
+</html>

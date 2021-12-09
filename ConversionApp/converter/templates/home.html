@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- <div class="homePage d-flex flex-row justify-content-center">
+    <a href="/testme"><button >Practice</button></a>
+    <a href="/converter"><button >Conversion</button></a>
+</div> -->
+
+
+<h4 id = "welcome" style = "text-align: center; margin-bottom:40px;">Welcome to the Measurement Converter!</h4>
+<div class = "home-body">
+    <p class = "home-text">What is the converter you ask? Well let me tell you! This was designed to be an educational resource to help teach and practice measurement
+    conversions. For now we are mainly focusing on converting metric units to imperial units. We have thrown in a few extra fun measurements
+    (such as leagues and nuatical miles), but stay tuned for new updates and more convertable units! </p>
+
+<h5 id = "header-home" style = "margin-top:10px;">How does this website work?</h5>
+<p class = "home-text">There are two main parts to this webiste. First, you can perform simple <a href="/converter">conversions on your own</a>. You may select the metric unit you want 
+    to convert, input your value, and select what imperial unit it will converted to. (CHECK) The formula will also be provided so that you can see the behind the scenes 
+    of how to do it for your own future reference. 
+    <br>
+    <br>
+    The second element of the website is the <a href="/testme">"Practice" page</a>. This helps you sharpen your own converting math skills! (CHECK) You may select which 
+    measurement you would like to convert, and the website will generate a number for you to convert. Seem daunting? Don't worry! We will give the formula instructions to guide you.
+    When you think you get the answer right, hover over the flashcard on the page to reveal if you were right or not. If you were correct, then you get to move on to the trickier numbers
+    and conversions. Work your way up to be a master mathematician of the measurements! 
+    <br>
+    <br>
+    If you want to use the "Practice" page, you will have to rgister. This way we can save your progress and generate the right numbers for you according to your skill level. So if you have
+    not done so already, click <a href ="/register">this link</a> to register an account with us. </p>
+
+</div>
+
+{% endblock %}

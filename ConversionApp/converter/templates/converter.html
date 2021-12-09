@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="converter-page">
+    <div style = "margin: auto; width: 100%; text-align: center;">
+        <form action="add">
+        <select class="select" name="type1" method = 'post' style = "margin: 15px; width:280px; height:45px;">
+            <option disabled='true' selected>-- Select Metric Measurement --</option>
+            <option value = 'mm'>Millimeters</option>
+            <option value = 'cm'>Centimeters</option>
+            <option value = 'dm'>Decimeter</option>
+            <option value = 'me'>Meters</option>
+            <option value = 'dam'>Dekameter</option>
+            <option value = hm'>Hectometer</option>
+            <option value = 'km'>Kilometer</option>
+            <option value = 'in'>Inches</option>
+            <option value = 'ft'>Feet</option>
+            <option value = 'ya'>Yard</option>
+            <option value = 'mi'>Mile</option>
+            <option value = 'nami'>Nautical Mile</option>
+            <option value = 'league'>League</option>
+        </select>
+
+
+        to
+
+        <select class="select"name="type2" method = "post" style = "margin: 15px; width:280px; height:45px;">
+            <option disabled='true' selected>-- Select Standard Measurement --</option>
+            <option value = 'mm'>Millimeters</option>
+            <option value = 'cm'>Centimeters</option>
+            <option value = 'dm'>Decimeter</option>
+            <option value = 'me'>Meters</option>
+            <option value = 'dam'>Dekameter</option>
+            <option value = hm'>Hectometer</option>
+            <option value = 'km'>Kilometer</option>
+            <option value = 'in'>Inches</option>
+            <option value = 'ft'>Feet</option>
+            <option value = 'ya'>Yard</option>
+            <option value = 'mi'>Mile</option>
+            <option value = 'nami'>Nautical Mile</option>
+            <option value = 'league'>League</option>
+        </select>
+            <br>
+            <div style = "margin-left: -8%;">
+            Enter Number : <input type='text' name="num1" style = "margin: 5px;"><br>
+            <input type="submit" style = "margin: 5px; margin-left:7rem; " class=" button">
+            </div>
+        </form>
+    </div>
+
+    <div style="margin-left:40rem; margin-top:100px; font-size:20px;">
+        <p>The answer is: {{res}}</p>
+        
+    </div>
+</div>
+
+<script src="coverter.js"></script>
+{% endblock %}
