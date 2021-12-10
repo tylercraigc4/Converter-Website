@@ -85,10 +85,10 @@ def base(request):
 
 def testme(request):
     #this gets values from the testme page, the units, the number being converted and the user's answer
-    type1 = request.get['type1', 'me']
-    type2 = request.get['type2', 'me']
-    num1 = request.get['num1', 1]
-    userAnswer = request.get['userAnswer', 1]
+    type1 = request.GET['type1', 'me']
+    type2 = request.GET['type2', 'me']
+    num1 = request.GET['num1', 1]
+    userAnswer = request.GET['userAnswer', 1]
 
     isCorrect = testAnswer(userAnswer, type1, type2, num1)
     values= {'result': isCorrect}
@@ -104,10 +104,10 @@ def converter(request):
 
 def add(request):
        
-    value1 = request.get['type1']
-    value2 = request.get['type2']
+    value1 = request.GET['type1']
+    value2 = request.GET['type2']
 
-    num1 = request.get['num1']
+    num1 = request.GET['num1']
     
 
     print(request.GET, request.method)
