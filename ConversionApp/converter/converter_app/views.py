@@ -5,7 +5,6 @@ from django.views.generic import TemplateView
 def testInputs(value1, value2, num1):
     #This block of code converts the number from the user to meters.
     num1InMeters = 0
-    print("Hello Olivia")
     if value1 == 'me': #meters
         num1InMeters = float(num1)
     elif value1 == 'mm': #millimeters
