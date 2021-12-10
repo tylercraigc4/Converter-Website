@@ -4,8 +4,8 @@
 
 <div class="converter-page">
     <div style = "margin: auto; width: 100%; text-align: center;">
-        <form action="add">
-        <select class="select" name="type1" method = 'post' style = "margin: 15px; width:280px; height:45px;">
+        <form action="{% url 'add' } "%>
+        <select class="select" name="type1" method = 'GET' style = "margin: 15px; width:280px; height:45px;">
             <option disabled='true' selected>-- Select Metric Measurement --</option>
             <option value = 'mm'>Millimeters</option>
             <option value = 'cm'>Centimeters</option>
@@ -25,7 +25,7 @@
 
         to
 
-        <select class="select"name="type2" method = "post" style = "margin: 15px; width:280px; height:45px;">
+        <select class="select"name="type2" method = "GET" style = "margin: 15px; width:280px; height:45px;">
             <option disabled='true' selected>-- Select Standard Measurement --</option>
             <option value = 'mm'>Millimeters</option>
             <option value = 'cm'>Centimeters</option>
