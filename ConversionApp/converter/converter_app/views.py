@@ -104,10 +104,10 @@ def converter(request):
 
 def add(request):
        
-    value1 = request.GET['type1']
-    value2 = request.GET['type2']
-
-    num1 = request.GET['num1']
+    value1 = request.GET.get('type1')
+    value2 = request.GET.get('type2')
+    print("hi")
+    num1 = request.GET.get('num1')
     
 
     print(request.GET, request.method)
