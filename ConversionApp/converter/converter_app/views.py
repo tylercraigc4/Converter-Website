@@ -77,7 +77,6 @@ def testAnswer(userAnswer, type1, type2, val):
 
 # Create your views here.
 def converter(request):
-    print("Hi Tyler!")
     return render(request, 'home.html',{'name': 'Olivia'})
     
 def base(request):
@@ -99,22 +98,18 @@ def convert(request):
     return render(request, 'converter.html')
 
 def converter(request):
-    print("Hi Poya!")
     return render(request, 'converter.html', {'name': 'Olivia'})
 
 def add(request):
-       
     value1 = request.GET.get('type1')
     value2 = request.GET.get('type2')
-    print("hi")
+
     num1 = request.GET.get('num1')
     
-
     print(request.GET, request.method)
    
     solution = testInputs(value1, value2, num1)
     values= {'res': solution}
-    
     
     return render(request,'converter.html', values)
 
