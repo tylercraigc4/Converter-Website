@@ -106,7 +106,7 @@ def add(request):
        
     value1 = request.GET.get('type1')
     value2 = request.GET.get('type2')
-
+    print("hi")
     num1 = request.GET.get('num1')
     
 
