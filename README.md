@@ -2,6 +2,9 @@
 
 This is a web site that helps students convert numbers in different units. It is used just like any other website and allows for user registration. 
 
+![Conversion Example](ConversionExample.png)
+![Home Page](homepage.png)
+
 # Development Environment
 
 This project was made in Visual Studio Code and is Python based. The library used to build the website was Django, the backend functions are programmed in Python, the front end is in HTML and the styling is done in CSS.
