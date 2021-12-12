@@ -19,7 +19,6 @@ This project was made in Visual Studio Code and is Python based. The library use
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
 * [Django Documentation](https://docs.djangoproject.com/en/4.0/)
 * [Youtube Django Tutorial](https://www.youtube.com/watch?v=OTmQOjsl0eg)
 
